@@ -14,7 +14,7 @@
 </select>
 
 <br>
-<canvas id="canvas" width="600" height="600"></canvas>
+<canvas id="canvas" width="300" height="300"></canvas>
 
 <div id="stats" style="float:right;width:300px;">
 Food Eaten: <span id="food_val"></span><br>
@@ -22,6 +22,21 @@ Moves: <span id="moves_val"></span><br>
 Average Moves: <span id="avg_moves_val"></span><br>
 Average Nodes Processed: <span id="avg_nodes_val"></span><br>
 </div>
+
+<h2>Purpose</h2>
+<p>The goal of this assignment was to measure the usefulness of various search algorithms. In this example, we are using Breadth First Search, Depth First Search, and A* search with two heuristics (and combined) to allow the snake to find the food.</p>
+
+<h2>How it works</h2>
+<p>This application uses web workers to offload the processing, which allows the browser UI to remain responsive even though CPU intensive operations may be taking place. The results are drawn on the screen using a canvas element.</p>
+
+<h2>Findings</h2>
+<p>Breadth First Search - Results in low average moves, but must process many nodes (low number of moves at high CPU cost)<br>
+Depth First Search - Results in high average moves, but must process many nodes (high number of moves at high CPU cost, very bad)<br>
+A* Search - Results in low average moves, with low number of processed nodes (low number of moves at low CPU cost, very good)
+</p>
+
+<h2>What Makes A* So Great?</h2>
+<p>It's the heuristics! A* search allows us to know what direction the food is closest to, so we search in that direction instead of randmonly wandering around the board. Sort of like if the snake had a sense of smell.</p>
 
 <script type="text/javascript">
 //the canvas used to draw the state of the game
