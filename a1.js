@@ -348,7 +348,11 @@ function heuristic_estimate_2(point1,point2){
 
 //start the run function
 function start(){
+	init();
 	config.runTimeout = setTimeout(run, 100);
+	stats.moves = 0;
+	stats.food = 0;
+	stats.count = 0;
 }
 
 //stop the run function
