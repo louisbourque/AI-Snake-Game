@@ -1,5 +1,5 @@
 <html>
-<head><title>COMP 4106 - Assignment 1</title>
+<head><title>AI Snake Game</title>
 <script type="text/javascript" src="jquery.js"></script>
 </head>
 <body>
@@ -142,7 +142,7 @@ function refresh_view(data){
 }
 
 //create a web worker that will do the processing
-var worker = new Worker("a1.js");  
+var worker = new Worker("snake.js");  
 
 //when the worker sends a message, act on it.
 worker.onmessage = function(event) {
