@@ -6,4 +6,4 @@ The algorithms used to search for the food are DFS, BFS, and A* using some heuri
 
 ##Demo
 
-http://louisbourque.github.com/AI-Snake-Game/
+http://louisbourque.ca/AI-Snake-Game/
